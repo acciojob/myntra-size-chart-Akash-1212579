@@ -1,2 +1,41 @@
+table {
+      border-collapse: collapse;
+     width:60%;
+     
+    }
 
-/* Your CSS Code here. */
+    th, td {
+      border: 1px solid black;
+      
+    }
+
+    thead th {
+      background-color: #a94442; /* dark red */
+      color: white;
+      text-align: left;
+    }
+
+    /* Row background colors */
+    tbody tr:nth-child(1) {
+      background-color: #e99694; /* light red */
+    }
+
+    tbody tr:nth-child(2) {
+      background-color: #f1dada; /* light pink/gray */
+    }
+
+    tbody tr:nth-child(3) {
+      background-color: #e0e0e0; /* light gray */
+    }
+
+    /* Left-align text column (first column) */
+    tbody td:first-child {
+      text-align: left;
+      font-weight: bold;
+    }
+
+    /* Right-align all number columns */
+    tbody td:not(:first-child)
+    {
+      text-align: right;
+    }
